@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricista Cesar Quezada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: white;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    .contacto {
+      background-color: #eef;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004c99;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #ddd;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cesar Quezada</h1>
+    <p>Electricista certificado en Río Bueno</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Servicios</h2>
+      <ul>
+        <li>Instalaciones eléctricas domiciliarias</li>
+        <li>Mantenimiento e inspección</li>
+        <li>Certificación de instalaciones</li>
+        <li>Reparaciones y soluciones rápidas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>¿Por qué elegir a Cesar?</h2>
+      <p>Más de 10 años de experiencia entregando soluciones eléctricas seguras y confiables en la comuna de Río Bueno y alrededores. Trabajo profesional, puntualidad y garantía en cada servicio.</p>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+      <p><strong>WhatsApp:</strong> +56 9 1234 5678</p>
+      <p><strong>Email:</strong> cesar.quezada@ejemplo.cl</p>
+    </section>
+
+    <section class="contacto">
+      <h2>Formulario de contacto</h2>
+      <form action="mailto:cesar.quezada@ejemplo.cl" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje o cotización aquí..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Cesar Quezada - Electricista en Río Bueno
+  </footer>
+</body>
+</html>
