@@ -64,64 +64,6 @@
       background-color: #ddd;
       margin-top: 2rem;
     }
-  
-    .navbar {
-      background-color: #0066cc;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
-    .navbar .logo {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-    }
-    .navbar .menu {
-      display: flex;
-      list-style: none;
-      gap: 1rem;
-    }
-    .navbar .menu li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .navbar .menu-icon {
-      display: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-    #menu-toggle {
-      display: none;
-    }
-
-    @media (max-width: 700px) {
-      .navbar .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #005bb5;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 1rem;
-      }
-      #menu-toggle:checked + .menu-icon + .menu {
-        display: flex;
-      }
-      .navbar .menu-icon {
-        display: block;
-      }
-    }
-
   </style>
 </head>
 <body>
@@ -129,20 +71,6 @@
     <h1>Cesar Quezada</h1>
     <p>Electricista certificado en Río Bueno</p>
   </header>
-
-<nav class="navbar">
-  <div class="container">
-    <a href="index.html" class="logo">Cesar Electricista</a>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
-</nav>
-
 
   <main>
     <section>
@@ -160,14 +88,14 @@
       <p>Más de 10 años de experiencia entregando soluciones eléctricas seguras y confiables en la comuna de Río Bueno y alrededores. Trabajo profesional, puntualidad y garantía en cada servicio.</p>
     </section>
 
-    <section class="contacto" id="contacto">
+    <section class="contacto">
       <h2>Contacto</h2>
       <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
       <p><strong>WhatsApp:</strong> +56 9 1234 5678</p>
       <p><strong>Email:</strong> simples.web.chile@gmail.com</p>
     </section>
 
-    <section class="contacto" id="contacto">
+    <section class="contacto">
       <h2>Formulario de contacto</h2>
       <form action="https://formsubmit.co/simples.web.chile@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://simpleswebchile.github.io/cesar-quezada-web/gracias.html">
@@ -181,7 +109,8 @@
   </main>
 
   <footer>
-    &copy; 2024 Cesar Quezada - Electricista en Río Bueno
+    &copy; 2024 Cesar Quezada - Electricista en Río Bueno<br>
+    <a href="galeria.html" style="color: #004080; text-decoration: none;">Ver galería de trabajos</a>
   </footer>
 </body>
 </html>
